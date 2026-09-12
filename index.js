@@ -45,7 +45,7 @@ app.on('server:stopped', () => {
 
 logger.setupLogger(app);
 
-// Запуск сервера
+
 app.start(3000);
 
 
