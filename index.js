@@ -1,26 +1,54 @@
 const http = require('http');
+const EventEmitter = require('events');
+const logger = require('./logger');
 
-function calculatePi() {
-    let pi = 0;
-    
-    for (let i = 0; i < 10000; i++) {
-        pi += (i % 2 === 0 ? 1 : -1) / (2 * i + 1);
+class AppServer extends EventEmitter {
+    constructor() {
+        super();
+        this.server = null;
     }
-    return (pi * 4).toFixed(2); 
+
+    start(port) {
+        this.server = http.createServer((req, res) => {
+            this.emit('request:received', { url: req.url, method: req.method });
+            res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+            res.end('Hello from Event-Driven Server!');
+        });
+
+        this.server.listen(port, () => {
+            this.emit('server:started', { port });
+        });
+    }
+
+    stop() {
+        this.server.close(() => {
+            this.emit('server:stopped');
+        });
+    }
 }
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    
-    const fio = 'Гринкевич Егор Русланович';
-    const group = '401 группа';
-    const piValue = calculatePi();
 
-    
-    res.end(`${fio}<br>${group}<br>Число ПИ: ${piValue}`);
+const app = new AppServer();
+
+app.on('server:started', (data) => {
+    console.log(`🟢 Сервер запущен на порту ${data.port}`);
 });
 
-const PORT = 3000;
-server.listen(PORT, () => {
-    console.log(`Сервер запущен на http://localhost:${PORT}`);
+app.on('request:received', (data) => {
+    console.log(`🔵 Получен запрос: ${data.method} ${data.url}`);
 });
+
+app.on('server:stopped', () => {
+    console.log('🔴 Сервер остановлен');
+});
+
+
+logger.setupLogger(app);
+
+// Запуск сервера
+app.start(3000);
+
+
+setTimeout(() => {
+    app.stop();
+}, 10000);
