@@ -1,0 +1,72 @@
+{
+  "directory": "./project_2",
+  "date": "2026-09-19T08:58:47.247Z",
+  "totalFolders": 7,
+  "totalFiles": 14,
+  "totalSizeBytes": 841,
+  "totalSizeFormatted": "841 байт",
+  "extensions": {
+    ".txt": {
+      "count": 7,
+      "size": 471
+    },
+    ".md": {
+      "count": 7,
+      "size": 370
+    }
+  },
+  "top5Largest": [
+    {
+      "name": "info.txt",
+      "path": "project_2\\src\\utils\\info.txt",
+      "size": 78
+    },
+    {
+      "name": "info.txt",
+      "path": "project_2\\src\\components\\info.txt",
+      "size": 74
+    },
+    {
+      "name": "info.txt",
+      "path": "project_2\\src\\info.txt",
+      "size": 71
+    },
+    {
+      "name": "info.txt",
+      "path": "project_2\\src\\modules\\info.txt",
+      "size": 66
+    },
+    {
+      "name": "info.txt",
+      "path": "project_2\\data\\results\\info.txt",
+      "size": 62
+    }
+  ],
+  "top5Smallest": [
+    {
+      "name": "README.md",
+      "path": "project_2\\src\\README.md",
+      "size": 47
+    },
+    {
+      "name": "README.md",
+      "path": "project_2\\data\\README.md",
+      "size": 48
+    },
+    {
+      "name": "README.md",
+      "path": "project_2\\src\\utils\\README.md",
+      "size": 53
+    },
+    {
+      "name": "README.md",
+      "path": "project_2\\data\\input\\README.md",
+      "size": 54
+    },
+    {
+      "name": "README.md",
+      "path": "project_2\\src\\modules\\README.md",
+      "size": 55
+    }
+  ]
+}
