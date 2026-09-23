@@ -1,0 +1,96 @@
+{
+ "files": [
+ {
+ "name": "file1.js",
+ "size": 495
+ },
+ {
+ "name": "file2.json",
+ "size": 495
+ },
+ {
+ "name": "file3.png",
+ "size": 4096
+ },
+ {
+ "name": "file4.jpg",
+ "size": 5120
+ },
+ {
+ "name": "file5.txt",
+ "size": 495
+ },
+ {
+ "name": "file6.js",
+ "size": 495
+ },
+ {
+ "name": "file7.json",
+ "size": 495
+ },
+ {
+ "name": "file8.png",
+ "size": 9216
+ },
+ {
+ "name": "file9.jpg",
+ "size": 10240
+ },
+ {
+ "name": "file10.txt",
+ "size": 500
+ },
+ {
+ "name": "file11.js",
+ "size": 500
+ },
+ {
+ "name": "file12.json",
+ "size": 500
+ },
+ {
+ "name": "file13.png",
+ "size": 14336
+ },
+ {
+ "name": "file14.jpg",
+ "size": 15360
+ },
+ {
+ "name": "file15.txt",
+ "size": 500
+ },
+ {
+ "name": "file16.js",
+ "size": 500
+ },
+ {
+ "name": "file17.json",
+ "size": 500
+ },
+ {
+ "name": "file18.png",
+ "size": 19456
+ },
+ {
+ "name": "file19.jpg",
+ "size": 20480
+ },
+ {
+ "name": "file20.txt",
+ "size": 500
+ },
+ {
+ "name": "sub1\\nested1.txt",
+ "size": 60
+ },
+ {
+ "name": "sub2\\nested2.txt",
+ "size": 60
+ },
+ {
+ "name": "sub3\\nested3.txt",
+ "size": 60
+ }
+ ]
+}

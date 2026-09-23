@@ -1,0 +1,23 @@
+Отчёт синхронизации: source_2 <-> backup_2
+Дата: 2026-09-19T08:59:10.249Z
+
+Совпадают: 8 файлов
+Изменены: 16 файлов
+  - file1.js
+  - file10.txt
+  - file11.js
+  - file12.json
+  - file15.txt
+  - file16.js
+  - file17.json
+  - file2.json
+  - file20.txt
+  - file5.txt
+  - file6.js
+  - file7.json
+  - manifest.json
+  - sub1\nested1.txt
+  - sub2\nested2.txt
+  - sub3\nested3.txt
+Добавлены: 0 файлов
+Удалены: 0 файлов

@@ -9,5 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaGaDa4/LABA1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BaGaDa4/LABA1/issues"
+  },
+  "homepage": "https://github.com/BaGaDa4/LABA1#readme",
+  "dependencies": {
+    "koa": "^3.2.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^14.0.0"
+  }
 }
