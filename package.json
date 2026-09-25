@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/BaGaDa4/LABA1#readme",
   "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^5.2.1",
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^14.0.0"
