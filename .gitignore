@@ -1,3 +1,7 @@
 node_modules/
 .env
 .DS_Store
+dist-bin/
+*.exe
+output.*
+result.json
