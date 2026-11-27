@@ -14,15 +14,28 @@
     "type": "git",
     "url": "git+https://github.com/BaGaDa4/LABA1.git"
   },
+  "bin": {
+  "my-cli": "./bin/my-cli.js"
+},
   "bugs": {
     "url": "https://github.com/BaGaDa4/LABA1/issues"
   },
   "homepage": "https://github.com/BaGaDa4/LABA1#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^11.1.0",
     "compression": "^1.8.2",
     "express": "^5.2.1",
+    "inquirer": "^8.2.7",
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1",
-    "koa-router": "^14.0.0"
+    "koa-router": "^14.0.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.26.0",
+    "jest": "^30.5.2"
   }
+  
 }
